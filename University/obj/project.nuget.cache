@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "nXfx+GOQEAtYndXbQJLPEgXjVAnhLr5qw/FlBf+bAnHIQrhVBlGMTr72uE7ChRKfm6Ajmt8G5XS9YNduF40u3w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\opilane\\source\\repos\\University\\University\\University.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\TEMP\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+  ],
+  "logs": []
+}
