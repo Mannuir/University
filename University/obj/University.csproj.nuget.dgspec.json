@@ -10,7 +10,7 @@
         "projectUniqueName": "C:\\Users\\opilane\\source\\repos\\University\\University\\University.csproj",
         "projectName": "University",
         "projectPath": "C:\\Users\\opilane\\source\\repos\\University\\University\\University.csproj",
-        "packagesPath": "C:\\Users\\TEMP\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\opilane\\source\\repos\\University\\University\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
@@ -19,7 +19,7 @@
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\TEMP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\opilane\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -46,6 +46,26 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.29, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[3.1.29, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.29, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.29, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
