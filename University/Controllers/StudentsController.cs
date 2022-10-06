@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using University.Data;
-
+using University.Models;
 
 namespace University.Controllers
 {
@@ -21,6 +21,26 @@ namespace University.Controllers
         {
             var result = await _context.Students.ToListAsync();
             return View(result);
+        }
+        public async Task<IActionResult>Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+
+            }
+            var Student = await _context.Students
+                .Include(s => s.Enrollments)
+                .ThenInclude(e => e.Course)
+                .AsNoTracking()
+                .FirstOrDefaultAsync(m => m.Id ==id);
+
+            if(Student == null)
+            {
+                return NotFound(); 
+            }
+
+            return View(Student);
         }
 }
 
